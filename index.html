@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <style>
+        body {
+            font-family: 'Cormorant Garamond', Cormorant Garamond;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            font-size: 16px;
+        }
+        .header {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px 20px;
+            text-align: center;
+            border-bottom: 2px solid #f3f6f4;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header img {
+            max-height: 90px;
+            margin: 0 10px;
+        }
+        .container {
+            width: 70%;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .product-details {
+            width: 70%;
+            text-align: left;
+            padding: 10px;
+        }
+        .product-image {
+            width: 30%;
+            text-align: center;
+            padding: 10px;
+        }
+        .product-image img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            margin-top: 60px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+            font-size: 16px;
+        }
+        .link-button {
+            color: #0275d8;
+            text-decoration: none;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            font-size: 16px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover, .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        #price {
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                width: 90%;
+            }
+            .product-details, .product-image {
+                width: 100%;
+            }
+            .header img {
+                max-height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+	    <img src="images/ambiente.png" alt="ambiente">
+            <img src="images/LOGO PNG.png" alt="GLOBAL BASE">
+        </div>
+    </div>
+    <div class="container">
+        <div class="product-details">
+            <h2>Product Details:</h2>
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <td>Split CL Natural Weaving</td>
+                </tr>
+                <tr>
+                    <th>Product Code</th>
+                    <td>GBSL25382</td>
+                </tr>
+                <tr>
+                    <th>Product Material</th>
+                    <td>Kubu</td>
+                </tr>
+                <tr>
+                    <th>Product Size</th>
+                    <td>Large-Dia 60cm x Height 54cm(65)<br>
+                        Medium-Dia 46cmx Height 45cm(55)<br>
+                        Small-Dia 33cm x Height 33cm(41)<td>
+                </tr>
+                <tr>
+                    <th>Product CBM</th>
+                    <td>0.234</td>
+                </tr>
+                <tr>
+                    <th>Product Weight</th>
+                    <td>9.81 Kg</td>
+                </tr>
+                <tr>
+                    <th>Unit</th>
+                    <td>Set</td>
+                </tr>
+                <tr>
+                    <th>Carton Size</th>
+                    <td>Length 61cm x Width 61cm x Height 67cm</td>
+                </tr>
+                <tr>
+                    <th>Carton Quantity</th>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>Carton CBM</th>
+                    <td>0.249</td>
+                </tr>
+                <tr>
+                    <th>20 Ft Container Carton Quantity</th>
+                    <td>81 Carton</td>
+                </tr>
+                <tr>
+                    <th>40 Ft Container Carton Quantity</th>
+                    <td>171 Carton</td>
+                </tr>
+                <tr>
+                    <th>40 HQ Container Carton Quantity</th>
+                    <td>228 Carton</td>
+                </tr>
+                <tr>
+                    <th>Price</th>
+                    <td>USD 53.36</td>
+                </tr>
+                <tr>
+                    <th>FOB Port</th>
+                    <td>Semarang, Indonesia</td>
+                </tr>
+                <tr>
+                    <th>More Details - Packaging PPT</th>
+                    <td>Loose Packing</td>
+                </tr>
+            </table>
+        </div>
+        <div class="product-image">
+            <img src="images/Product Image.png" alt="Product Image">
+        </div>
+    </div>
+</body>
+</html>
